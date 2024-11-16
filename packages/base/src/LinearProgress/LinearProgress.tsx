@@ -96,9 +96,9 @@ export const LinearProgress: RneFunctionComponent<LinearProgressProps> = ({
       accessible
       accessibilityRole="progressbar"
       accessibilityValue={{
-        now: clamp(value),
+        now: clamp(value)*100,
         min: 0,
-        max: 1,
+        max: 100,
       }}
       {...rest}
       onLayout={(e) => {
